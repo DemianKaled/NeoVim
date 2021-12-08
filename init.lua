@@ -9,5 +9,9 @@ require('autopairs-config')
 require('whichkey-config')
 require('telescope-config')
 require('lsp-config')
-vim.cmd('colorscheme nord')
-
+require("packer").startup(
+    function()
+        use "lukas-reineke/indent-blankline.nvim"
+    end
+)
+vim.cmd[[colorscheme nord]]

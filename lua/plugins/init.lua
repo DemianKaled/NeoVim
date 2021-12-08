@@ -37,5 +37,7 @@ return require('packer').startup(function(use)
     'neovim/nvim-lspconfig',
     'williamboman/nvim-lsp-installer',
 }
-end)
+  use {'mattn/emmet-vim'}
+  use "rafamadriz/friendly-snippets"
 
+end)
